@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi Pramuka - Gugus Depan</title>
+    <!-- Menggunakan Tailwind CSS untuk desain cepat & modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pramuka: {
+                            light: '#DDB892',
+                            DEFAULT: '#7F5539',
+                            dark: '#9C6644',
+                            gold: '#E6A15C'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amber-50 text-stone-800 font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="bg-pramuka-dark text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider flex items-center gap-2">
+                ⚜️ <span class="hover:text-pramuka-light transition">PRAMUKA SMANSA OKU</span>
+            </a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#beranda" class="hover:text-pramuka-gold transition">Beranda</a>
+                <a href="#tentang" class="hover:text-pramuka-gold transition">Tentang</a>
+                <a href="#kegiatan" class="hover:text-pramuka-gold transition">Kegiatan</a>
+                <a href="#kontak" class="bg-pramuka-gold text-stone-900 px-4 py-2 rounded-full hover:bg-yellow-500 transition font-bold">Gabung Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative bg-cover bg-center h-[500px] flex items-center text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&q=80&w=1200');">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Satyaku Kudarmakan,<br>Darmaku Kubaktikan</h1>
+            <p class="text-lg md:text-xl text-stone-200 mb-8 max-w-2xl mx-auto">Membentuk karakter pemuda yang mandiri, disiplin, berakhlak mulia, dan siap mengabdi pada masyarakat.</p>
+            <a href="#tentang" class="bg-pramuka-dark border-2 border-white hover:bg-white hover:text-pramuka-dark px-8 py-3 rounded-full text-lg font-bold transition duration-300">
+                Jelajahi Lebih Lanjut
+            </a>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-pramuka-dark mb-2">Tentang Ekstrakurikuler</h2>
+                <div class="h-1 w-20 bg-pramuka-gold mx-auto rounded"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://cdn.phototourl.com/free/2026-07-17-521282fd-3a73-478d-bad3-eadfdd796c90.jpg" alt="Tentang Pramuka" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-stone-700 mb-4">Gerakan Pramuka Gugus Depan</h3>
+                    <p class="text-stone-600 mb-6 leading-relaxed">
+                        Kami adalah wadah pembinaan bagi para siswa untuk mengembangkan potensi diri, kepemimpinan, dan kerja sama tim. Melalui berbagai kegiatan menarik dan menantang di alam terbuka, kami mencetak generasi penerus bangsa yang tangguh dan berjiwa Pancasila.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-white rounded-lg shadow-sm border-l-4 border-pramuka-gold">
+                            <h4 class="font-bold text-pramuka-dark">Kemandirian</h4>
+                            <p class="text-sm text-stone-500">Belajar bertahan hidup dan memecahkan masalah.</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-lg shadow-sm border-l-4 border-pramuka-gold">
+                            <h4 class="font-bold text-pramuka-dark">Kepemimpinan</h4>
+                            <p class="text-sm text-stone-500">Melatih mental memimpin dan dipimpin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEGIATAN -->
+    <section id="kegiatan" class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-pramuka-dark mb-2">Kegiatan Seru Kami</h2>
+                <div class="h-1 w-20 bg-pramuka-gold mx-auto rounded"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kegiatan 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://cdn.phototourl.com/free/2026-07-17-2c0c1f21-9269-4da4-b9b2-c29b07319ea1.jpg" alt="Perkemahan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-stone-700">Perkemahan (Persami)</h3>
+                        <p class="text-stone-600 text-sm">Kegiatan wajib untuk melatih adaptasi di alam bebas, membangun kebersamaan, dan malam api unggun yang hangat.</p>
+                    </div>
+                </div>
+                <!-- Kegiatan 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://cdn.phototourl.com/free/2026-07-17-72c7d81d-d465-4809-b578-d8f7cd58ca40.jpg" alt="Pioneering" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-stone-700">Tali Temali & Pioneering</h3>
+                        <p class="text-stone-600 text-sm">Seni menyusun tongkat dan tali menjadi struktur berguna seperti menara pandang, jembatan darurat, dan gapura.</p>
+                    </div>
+                </div>
+                <!-- Kegiatan 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://cdn.phototourl.com/free/2026-07-17-9bb3c854-c9d8-4db7-9c7c-a8430cceebc3.jpg" alt="Outbound" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-stone-700">Jelajah Alam & Sandi</h3>
+                        <p class="text-stone-600 text-sm">Mengasah otak dengan memecahkan kode Morse, Semaphore, sandi kotak, serta navigasi kompas saat menjelajah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM PENDAFTARAN -->
+<section id="kontak" class="py-20">
+    <div class="container mx-auto px-6 max-w-xl">
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-stone-200">
+            <h3 class="text-2xl font-bold text-pramuka-dark text-center mb-6">Pendaftaran Anggota Baru</h3>
+            
+            <form id="formPendaftaran" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-stone-600 mb-1">Nama Lengkap</label>
+                    <input type="text" id="nama" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pramuka" placeholder="Masukkan nama lengkapmu..." required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-600 mb-1">Kelas</label>
+                    <input type="text" id="kelas" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pramuka" placeholder="Contoh: X MIPA 1" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-stone-600 mb-1">Alasan Bergabung</label>
+                    <textarea id="alasan" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pramuka" rows="4" placeholder="Apa motivasimu ikut Pramuka?" required></textarea>
+                </div>
+                <button type="button" onclick="kirimKeWA()" class="w-full bg-pramuka text-white font-bold py-3 rounded-lg hover:bg-pramuka-dark transition duration-300 shadow">
+                    Hubungkan ke WhatsApp
+                </button>
+            </form>
+
+        </div>
+    </div>
+</section>
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-8 text-center border-t border-stone-800">
+        <p class="mb-2">© 2026 Gerakan Pramuka Gudep Ambalan. All Rights Reserved.</p>
+        <p class="text-xs">Satyaku Kudarmakan, Darmaku Kubaktikan. Salam Pramuka! ⚜️</p>
+    </footer>
+
+</body>
+<script>
+    function kirimKeWA() {
+        // Ambil data dari input formulir
+        const nama = document.getElementById('nama').value;
+        const kelas = document.getElementById('kelas').value;
+        const alasan = document.getElementById('alasan').value;
+
+        // Validasi sederhana agar form harus diisi dahulu
+        if (!nama || !kelas || !alasan) {
+            alert("Harap isi semua kolom pendaftaran terlebih dahulu!");
+            return;
+        }
+
+        // Ganti nomor ini dengan nomor WhatsApp Anda / Pembina (gunakan format internasional tanpa tanda '+')
+        // Contoh: 6281234567890
+        const nomorWA = "6285366347754"; 
+
+        // Menyusun teks pesan WhatsApp
+        const teksPesan = `Halo Kak, saya ingin mendaftar ekskul Pramuka.%0A%0A` +
+                          `*Nama:* ${encodeURIComponent(nama)}%0A` +
+                          `*Kelas:* ${encodeURIComponent(kelas)}%0A` +
+                          `*Alasan Bergabung:* ${encodeURIComponent(alasan)}`;
+
+        // Membuka tautan WhatsApp di tab baru
+        window.open(`https://api.whatsapp.com/send?phone=${nomorWA}&text=${teksPesan}`, '_blank');
+    }
+</script>
+
+
+</html>
